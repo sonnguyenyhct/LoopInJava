@@ -14,6 +14,9 @@ public class Prime {
 
     }
     public static boolean checkPrime(int prime){
+        if (prime == 1 || prime == 2){
+            return false;
+        }
         for (int count = 2; count < Math.sqrt(prime); count++){
             if (prime%count == 0){
                 return false;
